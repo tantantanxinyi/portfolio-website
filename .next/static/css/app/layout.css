@@ -872,6 +872,9 @@ video {
 .p-0\.5 {
   padding: 0.125rem;
 }
+.p-6 {
+  padding: 1.5rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -909,6 +912,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .text-center {
   text-align: center;
@@ -983,6 +989,9 @@ video {
 }
 .opacity-5 {
   opacity: 0.05;
+}
+.opacity-50 {
+  opacity: 0.5;
 }
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
