@@ -631,19 +631,22 @@ video {
 .z-10 {
   z-index: 10;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .-mb-4 {
   margin-bottom: -1rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -695,6 +698,10 @@ video {
   width: 1.25rem;
   height: 1.25rem;
 }
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .size-8 {
   width: 2rem;
   height: 2rem;
@@ -719,12 +726,11 @@ video {
   width: 820px;
   height: 820px;
 }
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
 .h-12 {
   height: 3rem;
+}
+.max-h-full {
+  max-height: 100%;
 }
 .w-full {
   width: 100%;
@@ -735,8 +741,14 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-xs {
+  max-width: 20rem;
+}
 .flex-none {
   flex: none;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
@@ -746,12 +758,12 @@ video {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.-rotate-3 {
-  --tw-rotate: -3deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .-rotate-12 {
   --tw-rotate: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-rotate-3 {
+  --tw-rotate: -3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
@@ -784,8 +796,8 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.gap-16 {
-  gap: 4rem;
+.gap-8 {
+  gap: 2rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -827,6 +839,10 @@ video {
 }
 .bg-emerald-300\/20 {
   background-color: rgb(110 231 183 / 0.2);
+}
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 .bg-gray-800 {
   --tw-bg-opacity: 1;
@@ -891,30 +907,29 @@ video {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.pb-16 {
-  padding-bottom: 4rem;
-}
-.pt-8 {
-  padding-top: 2rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .pb-0 {
   padding-bottom: 0px;
+}
+.pb-16 {
+  padding-bottom: 4rem;
+}
+.pb-96 {
+  padding-bottom: 24rem;
+}
+.pt-8 {
+  padding-top: 2rem;
 }
 .text-center {
   text-align: center;
@@ -937,14 +952,14 @@ video {
 .font-bold {
   font-weight: 700;
 }
+.font-extrabold {
+  font-weight: 800;
+}
 .font-medium {
   font-weight: 500;
 }
 .font-semibold {
   font-weight: 600;
-}
-.font-extrabold {
-  font-weight: 800;
 }
 .uppercase {
   text-transform: uppercase;
@@ -977,6 +992,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-white\/40 {
+  color: rgb(255 255 255 / 0.4);
+}
 .text-white\/50 {
   color: rgb(255 255 255 / 0.5);
 }
@@ -990,9 +1008,6 @@ video {
 .opacity-5 {
   opacity: 0.05;
 }
-.opacity-50 {
-  opacity: 0.5;
-}
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1004,70 +1019,13 @@ video {
     max-width: 64rem;
   }
 }
-.\[mask-image\:line\] {
-  -webkit-mask-image: line;
-          mask-image: line;
-}
-.\[mask-image\:linear-gradient\(\)\] {
-  -webkit-mask-image: linear-gradient();
-          mask-image: linear-gradient();
-}
-.\[mask-image\:linear-gradient\(to\)\] {
-  -webkit-mask-image: linear-gradient(to);
-          mask-image: linear-gradient(to);
-}
 .\[mask-image\:linear-gradient\(to_bottom\2c black\2c black_70\%\2c transparent\)\] {
   -webkit-mask-image: linear-gradient(to bottom,black,black 70%,transparent);
           mask-image: linear-gradient(to bottom,black,black 70%,transparent);
 }
-.\[mask-image\:linear-gradient\(to_right\)\] {
-  -webkit-mask-image: linear-gradient(to right);
-          mask-image: linear-gradient(to right);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black);
-          mask-image: linear-gradient(to right,transparent,black);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black 10%);
-          mask-image: linear-gradient(to right,transparent,black 10%);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c \)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black 10%,);
-          mask-image: linear-gradient(to right,transparent,black 10%,);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c b\)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black 10%,b);
-          mask-image: linear-gradient(to right,transparent,black 10%,b);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c black\)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black 10%,black);
-          mask-image: linear-gradient(to right,transparent,black 10%,black);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c black_90\%\)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black 10%,black 90%);
-          mask-image: linear-gradient(to right,transparent,black 10%,black 90%);
-}
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c black_90\%\2c transparent\)\] {
   -webkit-mask-image: linear-gradient(to right,transparent,black 10%,black 90%,transparent);
           mask-image: linear-gradient(to right,transparent,black 10%,black 90%,transparent);
-}
-.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c black_90\)\] {
-  -webkit-mask-image: linear-gradient(to right,transparent,black 10%,black 90);
-          mask-image: linear-gradient(to right,transparent,black 10%,black 90);
-}
-.\[mask-image\:linear-gradient\] {
-  -webkit-mask-image: linear-gradient;
-          mask-image: linear-gradient;
-}
-.\[mask-image\:linear\] {
-  -webkit-mask-image: linear;
-          mask-image: linear;
-}
-
-.after\:pointer-events-none::after {
-  content: var(--tw-content);
-  pointer-events: none;
 }
 
 .after\:absolute::after {
@@ -1138,6 +1096,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:size-6 {
     width: 1.5rem;
     height: 1.5rem;
@@ -1147,8 +1109,16 @@ video {
     width: auto;
   }
 
+  .md\:max-w-md {
+    max-width: 28rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-10 {
@@ -1196,6 +1166,10 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .lg\:grid {
     display: grid;
   }
@@ -1212,16 +1186,22 @@ video {
     max-width: none;
   }
 
-  .lg\:max-w-full {
-    max-width: 100%;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:py-24 {
@@ -1234,17 +1214,12 @@ video {
     padding-bottom: 15rem;
   }
 
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .lg\:pt-16 {
     padding-top: 4rem;
-  }
-
-  .lg\:pb-16 {
-    padding-bottom: 4rem;
   }
 
   .lg\:text-lg {
