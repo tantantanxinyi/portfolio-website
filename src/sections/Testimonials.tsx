@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
     <div className="py-16 lg:py-20">
       <div className="container">
         <SectionHeader
-          eyebrow="What Clients Say about Me"
+          eyebrow="What Clients  Say about Me "
           title="Happy Clients"
           description="Don't just take my word for it. See what my clients have to say about my
         work"

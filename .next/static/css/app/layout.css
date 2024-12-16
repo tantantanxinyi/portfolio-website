@@ -660,11 +660,17 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
 .flex {
   display: flex;
 }
 .inline-flex {
   display: inline-flex;
+}
+.hidden {
+  display: none;
 }
 .size-10 {
   width: 2.5rem;
@@ -726,14 +732,31 @@ video {
   width: 820px;
   height: 820px;
 }
+.size-9 {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.size-0 {
+  width: 0px;
+  height: 0px;
+}
 .h-12 {
   height: 3rem;
+}
+.h-\[320px\] {
+  height: 320px;
+}
+.h-\[\] {
+  height: ;
 }
 .max-h-full {
   max-height: 100%;
 }
 .w-full {
   width: 100%;
+}
+.w-40 {
+  width: 10rem;
 }
 .max-w-lg {
   max-width: 32rem;
@@ -798,6 +821,9 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -885,11 +911,29 @@ video {
   -webkit-background-clip: text;
           background-clip: text;
 }
+.fill-\[\] {
+  fill: ;
+}
+.fill-\[url\] {
+  fill: url;
+}
+.fill-\[url\(\)\] {
+  fill: url();
+}
+.fill-\[url\(\#\)\] {
+  fill: url(#);
+}
+.fill-\[url\(\#tech-icon-gradient\)\] {
+  fill: url(#tech-icon-gradient);
+}
 .p-0\.5 {
   padding: 0.125rem;
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-0 {
+  padding: 0px;
 }
 .px-4 {
   padding-left: 1rem;
@@ -919,6 +963,22 @@ video {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -930,6 +990,12 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .text-center {
   text-align: center;
@@ -1001,12 +1067,25 @@ video {
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
 }
+.text-sky-400 {
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity));
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .opacity-5 {
   opacity: 0.05;
+}
+.outline {
+  outline-style: solid;
+}
+.outline-2 {
+  outline-width: 2px;
+}
+.outline-white\/10 {
+  outline-color: rgb(255 255 255 / 0.1);
 }
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
@@ -1019,13 +1098,45 @@ video {
     max-width: 64rem;
   }
 }
+.\[mask-image\:linear-\] {
+  -webkit-mask-image: linear-;
+          mask-image: linear-;
+}
+.\[mask-image\:linear-gradient\(\)\] {
+  -webkit-mask-image: linear-gradient();
+          mask-image: linear-gradient();
+}
 .\[mask-image\:linear-gradient\(to_bottom\2c black\2c black_70\%\2c transparent\)\] {
   -webkit-mask-image: linear-gradient(to bottom,black,black 70%,transparent);
           mask-image: linear-gradient(to bottom,black,black 70%,transparent);
 }
+.\[mask-image\:linear-gradient\(to_right\)\] {
+  -webkit-mask-image: linear-gradient(to right);
+          mask-image: linear-gradient(to right);
+}
+.\[mask-image\:linear-gradient\(to_right\2c tran\)\] {
+  -webkit-mask-image: linear-gradient(to right,tran);
+          mask-image: linear-gradient(to right,tran);
+}
+.\[mask-image\:linear-gradient\(to_right\2c transpa\)\] {
+  -webkit-mask-image: linear-gradient(to right,transpa);
+          mask-image: linear-gradient(to right,transpa);
+}
+.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\)\] {
+  -webkit-mask-image: linear-gradient(to right,transparent,black);
+          mask-image: linear-gradient(to right,transparent,black);
+}
+.\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_\)\] {
+  -webkit-mask-image: linear-gradient(to right,transparent,black );
+          mask-image: linear-gradient(to right,transparent,black );
+}
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black_10\%\2c black_90\%\2c transparent\)\] {
   -webkit-mask-image: linear-gradient(to right,transparent,black 10%,black 90%,transparent);
           mask-image: linear-gradient(to right,transparent,black 10%,black 90%,transparent);
+}
+.\[mask-image\:linear-gradient\] {
+  -webkit-mask-image: linear-gradient;
+          mask-image: linear-gradient;
 }
 
 .after\:absolute::after {
