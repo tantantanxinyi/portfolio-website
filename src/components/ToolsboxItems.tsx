@@ -14,12 +14,10 @@ const ToolsboxItems = ({
 }) => {
   return (
     <div
-      className={
-        (twMerge(
-          "flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
-        ),
-        className)
-      }
+      className={twMerge(
+        "flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]",
+        className
+      )}
     >
       <div className="flex flex-none py-0.5 gap-6">
         {items.map(item => (
