@@ -622,6 +622,9 @@ video {
 .top-1 {
   top: 0.25rem;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .-z-10 {
   z-index: -10;
 }
@@ -771,6 +774,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[400px\] {
+  height: 400px;
+}
 .max-h-full {
   max-height: 100%;
 }
@@ -783,6 +789,15 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+.w-\[\] {
+  width: ;
+}
+.w-\[600px\] {
+  width: 600px;
+}
+.w-\[1600px\] {
+  width: 1600px;
 }
 .max-w-lg {
   max-width: 32rem;
@@ -860,6 +875,9 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-1\.5 {
+  gap: 0.375rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -884,6 +902,9 @@ video {
 .border-t-2 {
   border-top-width: 2px;
 }
+.border-t {
+  border-top-width: 1px;
+}
 .border-gray-800 {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
@@ -901,6 +922,13 @@ video {
 .border-gray-900 {
   --tw-border-opacity: 1;
   border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+.border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+.border-red-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 226 226 / var(--tw-border-opacity));
 }
 .bg-emerald-300\/20 {
   background-color: rgb(110 231 183 / 0.2);
@@ -931,6 +959,16 @@ video {
 }
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
+}
+.bg-emerald-300\/10 {
+  background-color: rgb(110 231 183 / 0.1);
+}
+.bg-emerald-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 231 183 / var(--tw-bg-opacity));
+}
+.bg-emerald-300\/30 {
+  background-color: rgb(110 231 183 / 0.3);
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1169,6 +1207,10 @@ video {
     max-width: 64rem;
   }
 }
+.\[mask-image\:li\] {
+  -webkit-mask-image: li;
+          mask-image: li;
+}
 .\[mask-image\:linear-\] {
   -webkit-mask-image: linear-;
           mask-image: linear-;
@@ -1208,6 +1250,38 @@ video {
 .\[mask-image\:linear-gradient\] {
   -webkit-mask-image: linear-gradient;
           mask-image: linear-gradient;
+}
+.\[mask-image\:ra\] {
+  -webkit-mask-image: ra;
+          mask-image: ra;
+}
+.\[mask-image\:radial-gradient\(\)\] {
+  -webkit-mask-image: radial-gradient();
+          mask-image: radial-gradient();
+}
+.\[mask-image\:radial-gradient\(50\%_50\%\)\] {
+  -webkit-mask-image: radial-gradient(50% 50%);
+          mask-image: radial-gradient(50% 50%);
+}
+.\[mask-image\:radial-gradient\(50\%_50\%_at_\)\] {
+  -webkit-mask-image: radial-gradient(50% 50% at );
+          mask-image: radial-gradient(50% 50% at );
+}
+.\[mask-image\:radial-gradient\(50\%_50\%_at_bottom\)\] {
+  -webkit-mask-image: radial-gradient(50% 50% at bottom);
+          mask-image: radial-gradient(50% 50% at bottom);
+}
+.\[mask-image\:radial-gradient\(50\%_50\%_at_bottom_center\2c bl\)\] {
+  -webkit-mask-image: radial-gradient(50% 50% at bottom center,bl);
+          mask-image: radial-gradient(50% 50% at bottom center,bl);
+}
+.\[mask-image\:radial-gradient\(50\%_50\%_at_bottom_center\2c black\2c transparent\)\] {
+  -webkit-mask-image: radial-gradient(50% 50% at bottom center,black,transparent);
+          mask-image: radial-gradient(50% 50% at bottom center,black,transparent);
+}
+.\[mask-image\:radial-gradient\(50\)\] {
+  -webkit-mask-image: radial-gradient(50);
+          mask-image: radial-gradient(50);
 }
 
 .after\:pointer-events-none::after {
@@ -1337,6 +1411,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-8 {
