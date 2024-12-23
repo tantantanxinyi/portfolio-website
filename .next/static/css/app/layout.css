@@ -607,6 +607,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -625,6 +628,9 @@ video {
 .-z-10 {
   z-index: -10;
 }
+.-z-20 {
+  z-index: -20;
+}
 .-z-30 {
   z-index: -30;
 }
@@ -634,12 +640,13 @@ video {
 .z-10 {
   z-index: 10;
 }
-.-z-20 {
-  z-index: -20;
-}
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
+}
+.-my-4 {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -651,8 +658,8 @@ video {
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mt-16 {
-  margin-top: 4rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -815,6 +822,32 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@keyframes move-left {
+
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-move-left {
+  animation: move-left 1s linear infinite;
+}
+@keyframes move-right {
+
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+.animate-move-right {
+  animation: move-right 1s linear infinite;
+}
 @keyframes ping-large {
 
   75%, 100% {
@@ -833,6 +866,16 @@ video {
 }
 .animate-spin {
   animation: spin 1s linear infinite;
+}
+@keyframes ping {
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -921,10 +964,6 @@ video {
 }
 .border-white\/5 {
   border-color: rgb(255 255 255 / 0.05);
-}
-.border-red-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(254 242 242 / var(--tw-border-opacity));
 }
 .bg-emerald-300\/20 {
   background-color: rgb(110 231 183 / 0.2);
@@ -1045,6 +1084,10 @@ video {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1059,8 +1102,14 @@ video {
 .pb-16 {
   padding-bottom: 4rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .pr-6 {
   padding-right: 1.5rem;
+}
+.pr-8 {
+  padding-right: 2rem;
 }
 .pt-12 {
   padding-top: 3rem;
@@ -1159,20 +1208,33 @@ video {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
 @media (min-width: 1200px) {
 
   .container {
     max-width: 64rem;
   }
 }
-.\[animation-duration\:10s\] {
-  animation-duration: 10s;
-}
 .\[animation-duration\:20s\] {
   animation-duration: 20s;
 }
-.\[animation-timing-function\:linear\] {
-  animation-timing-function: linear;
+.\[animation-duration\:30s\] {
+  animation-duration: 30s;
+}
+.\[animation-duration\:3s\] {
+  animation-duration: 3s;
+}
+.\[animation-duration\:60s\] {
+  animation-duration: 60s;
 }
 .\[mask-image\:linear-gradient\(to_bottom\2c black\2c black_70\%\2c transparent\)\] {
   -webkit-mask-image: linear-gradient(to bottom,black,black 70%,transparent);
@@ -1247,6 +1309,11 @@ video {
   content: var(--tw-content);
 }
 
+.hover\:-rotate-3:hover {
+  --tw-rotate: -3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-white\/70:hover {
   background-color: rgb(255 255 255 / 0.7);
 }
@@ -1254,6 +1321,10 @@ video {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:\[animation-play-state\:paused\]:hover {
+  animation-play-state: paused;
 }
 
 @media (min-width: 768px) {
